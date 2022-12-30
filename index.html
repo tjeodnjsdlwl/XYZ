@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./asset/css/layout.css">
+  <link rel="stylesheet" href="./asset/css/main.css">
+
+
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script src="./asset/js/main.js"></script>
+</head>
+<body>
+
+
+
+  <header class="header">
+  <!-- 고정 메뉴 -->
+    <div class="group-header"> 
+
+      <h1 class="logo">
+        <a href="">
+          log.
+        </a>
+      </h1>
+
+      <a href="" class="btn-menu"><i class="btn"></i><span class="blind">메뉴</span></a>
+   
+    </div>
+    <!-- 사이드 메뉴 -->
+    <nav class="side-nav">
+      <ul>
+        <li><a href="">Intro</a></li>
+        <li><a href="">Intro</a></li>
+        <li><a href="">Intro</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <style>
+    .sc-vis{
+      background: #ff1937;
+      height: 100vh;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      padding: 0 100px;
+    }
+    .sc-vis h1{
+      font-family: 'Unbounded', cursive;
+      font-size: 5vw;
+      font-weight: 600;
+      line-height: 1.3 ;
+    }
+    .sc-vis img{
+      width: 20vw;
+    }
+  </style>
+
+  <div id="wrap">
+    <main class="main">
+      
+      <section class="sc-vis page">
+        <h1 class="title">BEYOND <br>IMAGINATION</h1>
+
+
+        <div class="img">
+          <img src="./asset/images/intro1.gif" alt="">
+        </div>
+
+      </section>
+
+      <style>
+        .sc-intro{
+          overflow: hidden;
+        }
+        .sc-intro .rolling{
+          display: flex;
+        }
+        .sc-intro .txt1{
+          font-size: 9vw;
+          font-weight: 700;
+          border-bottom: 2px solid #ff1937;
+          padding: 0 10px;
+          white-space: nowrap;
+          display: flex;
+          animation:  roll 10s infinite linear;
+        }
+
+
+        @keyframes roll {
+          0%{
+            transform: translateX(0);
+          }
+          100%{
+            transform: translateX(-100%);
+          }
+          
+        }
+
+        .sc-intro .txt1 img{
+          width: 13vw
+        }
+        .sc-intro .flex{
+          display: flex;
+          border-bottom: 2px solid #ff1937;
+
+        }
+        .sc-intro .flex .column{
+          flex: 1;
+          padding: 50px;
+          font-size: 28px;
+        }
+        .sc-intro .flex .column+.column{
+          border-left: 2px solid #ff1937;
+        }
+
+      </style>
+
+
+      <section class="sc-intro">
+        <h2 class="blind">자기소개</h2>
+
+        <div class="rolling">
+            <p class="txt1">안녕하세요 윤성종입니다. <img src="./asset/images/intro2.gif" alt=""></p>
+            <p class="txt1">안녕하세요 윤성종입니다. <img src="./asset/images/intro2.gif" alt=""></p>
+        </div>
+        <div class="flex">
+          <div class="column">`도전하는 것`은 인생의 중요한 가치입니다. 1년 전에 다녀왔던 호주 워킹홀리데이 경험으로 새로운 일을 경험하고 도전하는 것에 자신감이 있습니다.</div>
+          <div class="column">낯선 곳에서 적응하고 그 곳에서 한국인이 없는 곳에서 일을 해보는 목표를 이루었기 때문입니다.</div>
+        </div>
+
+
+
+      </section>
+
+
+      <style>
+        .link-url{
+          border: 2px solid #ff1937;
+          border-radius: 20px;
+          padding: 0 20px;
+          display: inline-block;
+          align-items: center;
+          font-size: 18px;
+          font-weight: 500;
+          gap:20px;
+          margin-top: 50px;
+        }
+        .link-url:hover{
+          background: #ff1937;
+          color: #fff;
+        }
+        .link-url img{
+          width: 50px;
+        }
+      </style>
+
+      <section class="prd sc-wrap">
+        <h2 class="blind">상품 리스트</h2>
+          <section class="sc-prd col-left">
+          <div class="common-inner">
+            <a href="" class="link-prd">
+              <div class="row">
+                <div class ="col left1">
+                  <div class="text-wrap">
+                    <span class="name">Google</span>
+                    <p class="text">Google + XYZ</p>
+                    <a href="" class="link-url">
+                      사이트로 이동 
+                      <!-- <img src="./asset/images/intro3.gif" alt=""> -->
+                    </a>
+                  </div>
+                </div>
+                <div class="col right1">
+                  <div class="img-wrap img-wrap1">
+                    <img class="prd" src="./asset/images/google.jpg" alt="구글케이스">
+                    <img class="prd_logo" src="./asset/images/logo/Google@2x.png" alt="구글로고">
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          </section>
+          <section class="sc-prd col-right">
+           <div class="common-inner">
+            <a href="" class="link-prd">
+              <div class="row">
+                <div class ="col left1">
+                  <div class="text-wrap">
+                    <span class="name">Levi’s</span>
+                    <p class="text">Style for Real People</p>
+                  </div>
+                </div>
+                <div class="col right1">
+                  <div class="img-wrap img-wrap2">
+                    <img class="prd" src="./asset/images/levis.jpg" alt="리바이스">
+                    <img class="prd_logo" src="./asset/images/logo/Levis-logo-2.png" alt="리바이스로고">
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          </section>
+          <section class="sc-prd col-left">
+          <div class="common-inner">
+            <a href="" class="link-prd">
+              <div class="row">
+                <div class ="col left1">
+                  <div class="text-wrap">
+                    <span class="name">Ring</span>
+                    <p class="text">From Fiery To Fabulous</p>
+                  </div>
+                </div>
+                <div class="col right1">
+                  <div class="img-wrap img-wrap3">
+                    <img class="prd" src="./asset/images/Ring.jpg" alt="링 mp3">
+                    <img class="prd_logo" src="./asset/images/logo/Ring-logo-7.png" alt="링로고">
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          </section>
+      </section>
+      <section class="sc-box">
+        <h2 class="blind">제품내용</h2>
+        <div class="common-inner">
+          <a href="" class="link-more">
+            <h3 class="title">About Us</h3>
+            <p class="desc">Getting To Know XYZ Starts Here</p>
+          </a>
+          <a href="" class="link-more ">
+            <h3 class="title">About Us</h3>
+            <p class="desc">Getting To Know XYZ Starts Here</p>
+          </a>
+        </div>
+      </section>
+      <section class="prd sc-wrap2">
+        <h2 class="blind">상품 리스트</h2>
+          <section class="sc-prd col-left">
+          <div class="common-inner">
+            <a href="" class="link-prd">
+              <div class="row">
+                <div class ="col left1">
+                  <div class="text-wrap">
+                    <span class="name">Anki</span>
+                    <p class="text">Personality Shines Through</p>
+                  </div>
+                </div>
+                <div class="col right1">
+                  <div class="img-wrap img-wrap4">
+                    <img class="prd" src="./asset/images/ankl.jpg" alt="안키">
+                    <img class="prd_logo" src="./asset/images/logo/Anki_logo-1.png" alt="안키로고">
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          </section>
+          <section class="sc-prd col-right">
+           <div class="common-inner">
+            <a href="" class="link-prd">
+              <div class="row">
+                <div class ="col left1">
+                  <div class="text-wrap">
+                    <span class="name">Morphe</span>
+                    <p class="text">Bold and Unapologetic</p>
+                  </div>
+                </div>
+                <div class="col right1">
+                  <div class="img-wrap img-wrap5">
+                    <img class="prd" src="./asset/images/morphe.jpg" alt="몰피">
+                    <img class="prd_logo" src="./asset/images/logo/morphe-logo_5.png" alt="몰피로고">
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          </section>
+          <section class="sc-prd col-left">
+          <div class="common-inner">
+            <a href="" class="link-prd">
+              <div class="row">
+                <div class ="col left1">
+                  <div class="text-wrap">
+                    <span class="name">Method</span>
+                    <p class="text">It Worked for a Soup Can</p>
+                  </div>
+                </div>
+                <div class="col right1">
+                  <div class="img-wrap img-wrap6">
+                    <img class="prd" src="./asset/images/Method.jpg" alt="메쏘드">
+                    <img class="prd_logo" src="./asset/images/logo/Method-logo_4.png" alt="구글로고">
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          </section>
+          <section class="sc-prd col-right">
+            <div class="common-inner">
+             <a href="" class="link-prd">
+               <div class="row">
+                 <div class ="col left1">
+                   <div class="text-wrap">
+                     <span class="name">Google Lifestyle</span>
+                     <p class="text">Masters of Illusion</p>
+                   </div>
+                 </div>
+                 <div class="col right1">
+                   <div class="img-wrap img-wrap7">
+                     <img class="prd" src="./asset/images/life-style.jpeg" alt="라이프스타일">
+                     <img class="prd_logo" src="./asset/images/logo/Google@2x.png" alt="구글로고">
+                   </div>
+                 </div>
+               </div>
+             </a>
+           </div>
+           </section>
+      </section>
+    </main>
+    <style>
+      footer{
+        text-align: center;
+      }
+    </style>
+    <footer class="footer">
+      <address>© portfolio 2023. All Rights Reserved.</address>
+    </footer>
+  </div>
+</body>
+</html>
